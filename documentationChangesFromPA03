@@ -1,0 +1,8 @@
+The code from PA 03 was changed starting with the Coord class. We made a new constructor in Coord that only takes in
+the parameters of x and y values. In the Ship class, we also made a new constructor which has parameters of Coord start,
+ int length, and Dir direction for a single ship. This made it much easier to transition to the our implementation of
+ BattleSalvo to the server’s implementation. The SalvoGame and Proxy dealer implements the Controller Interface— so now
+ they both inherent the run() method which runs both games. The Driver class now can handle taking in command line
+ arguments to run the server or take in zero command line arguments and run the BattleSalvo game. Finally,
+ we had to fix our ordering of width the height because our implementation of the x and y axis were different
+ from the server’s.
